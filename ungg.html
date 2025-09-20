@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <title>Қазақстанның тарихи орындары</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Жалпы стильдер */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%);
+      color: #333;
+    }
+
+    /* Навигация (header) */
+    header {
+      background-color: #004d40;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+      color: #e0f2f1;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    }
+
+    /* Галерея контейнері */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background-color: #fff;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: scale 0.5s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .gallery-item .caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 12px;
+      background: rgba(0, 77, 64, 0.7);
+      color: #fff;
+      font-size: 18px;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .gallery-item:hover .caption {
+      opacity: 1;
+    }
+
+    /* Видео бөлімі */
+    .video-container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      position: relative;
+    }
+
+    .video-container iframe {
+      width: 100%;
+      height: 450px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+    .video-container iframe:hover {
+      transform: scale(1.03);
+    }
+
+    /* Футер */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #e0f2f1;
+      font-size: 14px;
+      color: #333;
+      margin-top: 40px;
+      border-top: 1px solid #ccc;
+    }
+
+    /* Адаптивтік */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 24px;
+      }
+      .gallery-item .caption {
+        font-size: 16px;
+      }
+      .video-container iframe {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Қазақстанның тарихи орындары</h1>
+  </header>
+
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="https://top10.travel/wp-content/uploads/2017/04/monument-astana-bayterek.jpg" alt="Астана Бәйтерек">
+      <div class="caption">Астана – Бәйтерек</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://top10.travel/wp-content/uploads/2019/02/gora-koktobe.jpg" alt="Алматы Көктөбе">
+      <div class="caption">Алматы – Көктөбе</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://qazaqgeography.kz/assets/media/oblast-kyzylordinskaya/korkyt-ata.jpg" alt="Қорқыт Ата">
+      <div class="caption">Қызылорда – Қорқыт Ата</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://putidorogi-nn.ru/images/stories/aziya/kazahstan/kazahstan_2.jpg" alt="Маңғыстау">
+      <div class="caption">Маңғыстау – табиғат ғажайыптары</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://24.kz/images/AIGUL/96/4.jpg" alt="Хан Тәңірі">
+      <div class="caption">Пик Хан Тәңірі</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://24.kz/images/AIGUL/96/6.jpg" alt="Көлсай">
+      <div class="caption">Көлсай көлдері</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://24.kz/images/AIGUL/96/9.jpg" alt="Балқаш">
+      <div class="caption">Балқаш көлі</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://24.kz/images/AIGUL/96/15.JPG" alt="Яссауи кесенесі">
+      <div class="caption">Яссауи кесенесі</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://24.kz/images/AIGUL/96/17.JPG" alt="Байқоңыр">
+      <div class="caption">Байқоңыр ғарыш айлағы</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://24.kz/images/AIGUL/96/17.JPG" alt="Бурабай">
+      <div class="caption">Бурабай табиғи паркі</div>
+    </div>
+  </div>
+
+  <div class="video-container">
+    <h2>🎵 Мерекелік видео</h2>
+    <iframe src="https://www.youtube.com/embed/mBy1kqrwnvc?autoplay=1&loop=1&playlist=mBy1kqrwnvc"
+      title="YouTube video player"
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <footer>
+    &copy; 2025 Қазақстанның тарихи мұрасы
+  </footer>
+
+</body>
+</html>
